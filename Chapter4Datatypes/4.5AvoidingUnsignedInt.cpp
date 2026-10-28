@@ -1,0 +1,3 @@
+//Unsigned ints overflow / underflow, even if u never expect a negative value, it can happen and lead to wrap around
+//UB means the complier expects it will never happen, so it doesn't need to handle it, therefore, it can make optimizations (like removing insructions that account for UB / underflow)
+//UB can be caught by santizers like UBSan, unlike signed int overflow, which is defined behavior, it wraps around to 0 / wraps around to the max value of the type

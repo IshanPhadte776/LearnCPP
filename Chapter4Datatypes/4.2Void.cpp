@@ -1,0 +1,2 @@
+//void means no type is returned from the function, and no value is passed to the function
+// void add() {return;} //this is a void function, it does not return anything, and it does not take any parameters
