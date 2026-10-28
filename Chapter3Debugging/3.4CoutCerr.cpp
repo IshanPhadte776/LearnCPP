@@ -1,0 +1,1 @@
+//When debugging, use std::cerr, not std::cout, cout is buffered, won't always give realtime updates, std:cerr will also make it clear which states are error / just out
