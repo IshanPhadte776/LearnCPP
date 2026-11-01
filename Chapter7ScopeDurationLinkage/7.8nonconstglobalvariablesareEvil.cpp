@@ -1,0 +1,1 @@
+// non const global variables are bad because it prevent modularity design and state tracking, can elad to datta races and concurrency issues 
