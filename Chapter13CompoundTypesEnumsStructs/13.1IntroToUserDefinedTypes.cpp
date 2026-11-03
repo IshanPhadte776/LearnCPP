@@ -4,6 +4,7 @@
 //Type Definition
 //Teaches the complier the layout of a Faction struct
 //Allocates 0 bytes of memory 
+//member functions / inheritance is public 
 struct Faction {
     int numerator{};
     int denominator{};
