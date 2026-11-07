@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+
+class Car {
+private:
+    std::string m_make{};
+    std::string m_model{};
+
+public:
+    Car(std::string make, std::string model)
+        : m_make{ std::move(make) }, m_model{ std::move(model) } {}
+
+    // 1. Primary equality implementation
+    friend bool operator==(const Car& c1, const Car& c2) {
+        return (c1.m_make == c2.m_make && c1.m_model == c2.m_model);
+    }
+
+    // 2. Implemented strictly in terms of operator==
+    friend bool operator!=(const Car& c1, const Car& c2) {
+        return !(c1 == c2);
+    }
+};
+
+int main() {
+    Car corolla{ "Toyota", "Corolla" };
+    Car camry{ "Toyota", "Camry" };
+
+    if (corolla != camry)
+        std::cout << "The cars are different.\n";
+}
