@@ -20,4 +20,5 @@ class Storage<T*> { /* ... */ };
 
 //Full specialization = template<>, the types are unbounded, all values must be hardcoded and passed in at compile time StaticArray<int,5> 
 
-//Partial Specialization = at least 1 time is generic. either pass the type in <double>, <int> or value <5>
+//Partial Specialization = providing a specialization for a subset of the valid types / values of the original 
+
