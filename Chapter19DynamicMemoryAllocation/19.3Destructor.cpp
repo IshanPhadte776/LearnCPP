@@ -1,0 +1,1 @@
+//Rule of Zero, if a class only has variable that manage their own memory / fundmental types (vector + ints), no need for a custom destrutor, custom destructor is only needed when we call new and new[] explicitly 
